@@ -1,0 +1,1 @@
+# somas_em_intervalos
