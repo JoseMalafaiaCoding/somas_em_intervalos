@@ -37,4 +37,17 @@ void somas(int v[], int n, int ini[], int fim[], int q, long resp[]) {
 
 ## Execução
 
-As instruções para executar as versões, os testes e os experimentos serão adicionadas conforme a implementação do projeto.
+Pistas para começar
+* Para que percorrer o vetor inteiro se só interessa o trecho ini..fim?
+* Se você soubesse a soma de v[0..x] para todo x, como sairia a soma de v[ini..fim]?
+
+Tabela Padrão
+| Teste | n |
+|---|---:|
+| 1 | 1.000 |
+| 2 | 2.000 |
+| 3 | 5.000 |
+| 4 | 10.000 |
+| 5 | 20.000 |
+| 6 | 50.000 |
+| 7 | 100.000 |
