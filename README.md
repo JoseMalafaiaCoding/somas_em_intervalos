@@ -26,10 +26,14 @@ void somas(int v[], int n, int ini[], int fim[], int q, long resp[]) {
 
 ## Etapas
 
-- Analisar a complexidade e a função de custo `f(n, q)` de cada versão.
-- Validar todas as versões contra a v0 com **1.000 entradas aleatórias** e casos de borda.
-- Medir tempo e contar operações em **8 tamanhos de entrada**, com **5 repetições** por tamanho (mediana).
-- Comparar os resultados por meio de tabelas e gráficos e documentar as conclusões.
+| Critério | O que se espera | Peso |
+|---|---|:---:|
+| Análise da v0 | Contagem linha por linha correta, f(n) do pior caso, prova de Θ com tabela e gráfico | 20% |
+| Refatorações | 6 versões que realmente diminuem a f(n), cada uma com antes/depois, justificativa, nova f(n) e classe | 30% |
+| Correção | Teste automático comparando todas as versões com a v0, com casos de borda | 10% |
+| Experimento | Contador de primitivas batendo com a f(n), tempos com mediana, gráficos e ganho total | 25% |
+| Conclusão e relatório | Explicação do que rendeu mais e das diferenças entre teoria e medição; clareza | 10% |
+| Apresentação | Domínio do grupo sobre o próprio código | 5% |
 
 ## Execução
 
