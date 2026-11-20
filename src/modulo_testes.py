@@ -12,7 +12,7 @@ import statistics
 import time
 from pathlib import Path
 
-CENARIOS = (1_000, 2_000, 5_000, 10_000, 20_000, 30_000, 50_000, 100_000)
+CENARIOS = (1_000, 2_000, 5_000, 10_433, 20_000, 30_000, 50_000, 100_000)
 REPETICOES = 5
 SEMENTE = 42
 DIRETORIO = Path(__file__).resolve().parent
