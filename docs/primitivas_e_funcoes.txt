@@ -1,22 +1,43 @@
 v0
 c1 -> k = 0 . 1
 c2 -> k < q . n + 1
-c3 -> k++ . n
-c4 -> s = 0 . n
-c5 -> i = 0 . n
-c6 -> i < n . n² + n
-c7 -> i++ . n²
-c8 -> i >= . n²
-c9 -> ini[k] . n²
-c10 -> && . n²
-c11 -> i <= . n²
-c12 -> fim[k] . n²
-c13 -> s = . n²
-c14 -> s + . n²
-c15 -> v[i] . n²
-c16 -> resp[k] . n
-c17 -> = s . n
+c3 -> s = 0 . n
+c4 -> i = 0 . n
+c5 -> i < n . n² + n
+c6 -> i >= . n²
+c7 -> ini[k] . n²
+c8 -> and . n²
+c9 -> i <= . n²
+c10 -> fim[k] . n²
+c11 -> s = . n²
+c12 -> s + . n²
+c13 -> v[i] . n²
+c14 -> i += 1 . n²
+c15 -> resp[k] . n
+c16 -> = s . n
+c17 -> k += 1 . n
 
-k(n) = 5n²
+k(n) = 9n²
 f(n) = 10n² + 7n + 2
 g(n) = 12n²
+
+v1
+c1 -> k = 0 . 1
+c2 -> k < q . n + 1
+c3 -> s = 0 . n
+c4 -> i = . n
+c5 -> ini[k] . n
+c6 -> i < n . n² + n
+c7 -> i <= . n²
+c8 -> fim[k] . n²
+c9 -> s = . n²
+c10 -> s + . n²
+c11 -> v[i] . n²
+c12 -> i += 1 . n²
+c13 -> resp[k] . n
+c14 -> = s . n
+c15 -> k += 1 . n
+
+k(n) = 5n²
+f(n) = 7n² + 8n + 1
+g(n) = 9n²
