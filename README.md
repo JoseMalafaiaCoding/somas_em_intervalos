@@ -71,7 +71,7 @@ Os tempos apresentados correspondem à **mediana de cinco execuções** por vers
 
 Nos testes com `n = q = 10.433`, as versões v0, v1, v2 e v3 produziram a mesma soma registrada: **15.301**. No cenário 8, com `n = q = 10.000.000`, as versões lineares v4, v5 e v6 também coincidiram, retornando **-269.416**.
 
-**Justificativa dos cenários:** as versões v4, v5 e v6 foram avaliadas no cenário 8 porque, para valores menores de `n`, seus tempos muito curtos dificultam distinguir os ganhos com precisão. Em contrapartida, a v0 torna-se muito lenta em entradas grandes devido à sua complexidade quadrática. Por isso, foram usados tamanhos diferentes para manter os experimentos viáveis. Essa escolha impede calcular diretamente o ganho de tempo da v6 em relação à v0 a partir das medições apresentadas.
+**Justificativa dos cenários:** as versões v4, v5 e v6 foram avaliadas no cenário 8 porque, para valores menores de `n`, seus tempos muito curtos dificultam distinguir os ganhos com precisão. Em contrapartida, a v0 torna-se muito lenta em entradas grandes devido à sua complexidade quadrática. Por isso, foram usados tamanhos diferentes para manter os experimentos viáveis. Essa escolha impede calcular diretamente o ganho de tempo da v6 em relação à v0 a partir das medições apresentadas. Mesmo assim os tempos de execução nestas ultimas versões são muito maiores mesmo com n maiores.
 
 ### Refatorações que mais renderam
 
