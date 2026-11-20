@@ -41,3 +41,46 @@ c15 -> k += 1 . n
 k(n) = 5n²
 f(n) = 7n² + 8n + 1
 g(n) = 9n²
+
+v2
+c1 -> k = 0 . 1
+c2 -> k < q . n + 1
+c3 -> s = 0 . n
+c4 -> i = . n
+c5 -> ini[k] . n
+c6 -> i <= . n² + n
+c7 -> fim[k] . n²
+c8 -> s = . n²
+c9 -> s + . n²
+c10 -> v[i] . n²
+c11 -> i += 1 . n²
+c12 -> resp[k] . n
+c13 -> = s . n
+c14 -> k += 1 . n
+
+k(n) = 5n²
+f(n) = 6n² + 8n + 2
+g(n) = 8n²
+
+v3
+c1 -> k = . 1
+c2 -> k < q . n + 1
+c3 -> s = . n
+c4 -> i = . n
+c5 -> ini[k] . n
+c6 -> limite = . n
+c7 -> fim[k] . n
+c8 -> i <= limite . n² + n
+c9 -> s = . n²
+c10 -> s + . n²
+c11 -> v[i] . n²
+c12 -> i += 1 . n²
+c13 -> resp[k] . n
+c14 -> = s . n
+c15 -> k += 1 . n
+
+k(n) = 3n²
+f(n) = 5n² + 7n + 2
+g(n) = 7n²
+
+v4

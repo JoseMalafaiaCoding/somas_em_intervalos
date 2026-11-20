@@ -1,5 +1,4 @@
 def somas(v, n, ini, fim, q, resp):
-    # prefixo[x] guarda a soma dos primeiros x elementos do vetor.
     prefixo = [0] * (n + 1)
 
     i = 0
