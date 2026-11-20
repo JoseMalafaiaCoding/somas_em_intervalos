@@ -1,0 +1,77 @@
+Resultados dos testes
+Versão: v0 | Teste: 4 | n = 10,433 | q = 10,433
+Repetições: 5
+Repetição 1: 8.703028 s
+Repetição 2: 8.785270 s
+Repetição 3: 8.740156 s
+Repetição 4: 9.009373 s
+Repetição 5: 9.049804 s
+
+Mediana: 8.785270 s
+Resultado da soma do intervalo [0, 10432]: 15301
+
+Versão: v1 | Teste: 4 | n = 10,433 | q = 10,433
+Repetições: 5
+Repetição 1: 7.666702 s
+Repetição 2: 7.786352 s
+Repetição 3: 7.708809 s
+Repetição 4: 7.690291 s
+Repetição 5: 7.713638 s
+
+Mediana: 7.708809 s
+Resultado da soma do intervalo [0, 10432]: 15301
+
+Versão: v2 | Teste: 4 | n = 10,433 | q = 10,433
+Semente: 42 | Repetições: 5
+Repetição 1: 6.053215 s
+Repetição 2: 6.144552 s
+Repetição 3: 6.439817 s
+Repetição 4: 6.172683 s
+Repetição 5: 6.200923 s
+
+Mediana: 6.172683 s
+Resultado da soma do intervalo [0, 10432]: 15301
+
+Versão: v3 | Teste: 4 | n = 10,433 | q = 10,433
+Repetições: 5
+Repetição 1: 5.953405 s
+Repetição 2: 5.921609 s
+Repetição 3: 5.884186 s
+Repetição 4: 5.885706 s
+Repetição 5: 5.909541 s
+
+Mediana: 5.909541 s
+Resultado da soma do intervalo [0, 10432]: 15301
+
+Versão: v4 | Teste: 8 | n = 10,000,000 | q = 10,000,000
+Semente: 42 | Repetições: 5
+Repetição 1: 2.364578 s
+Repetição 2: 2.320433 s
+Repetição 3: 2.264571 s
+Repetição 4: 2.265766 s
+Repetição 5: 2.254292 s
+
+Mediana: 2.265766 s
+Resultado da soma do intervalo [0, 9999999]: -269416
+
+Versão: v5 | Teste: 8 | n = 10,000,000 | q = 10,000,000
+Semente: 42 | Repetições: 5
+Repetição 1: 1.938552 s
+Repetição 2: 1.951764 s
+Repetição 3: 1.971931 s
+Repetição 4: 2.047775 s
+Repetição 5: 2.120300 s
+
+Mediana: 1.971931 s
+Resultado da soma do intervalo [0, 9999999]: -269416
+
+Versão: v6 | Teste: 8 | n = 10,000,000 | q = 10,000,000
+Semente: 42 | Repetições: 5
+Repetição 1: 1.602101 s
+Repetição 2: 1.575063 s
+Repetição 3: 1.557391 s
+Repetição 4: 1.504538 s
+Repetição 5: 1.506581 s
+
+Mediana: 1.557391 s
+Resultado da soma do intervalo [0, 9999999]: -269416

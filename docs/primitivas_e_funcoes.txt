@@ -84,33 +84,48 @@ f(n) = 5n² + 7n + 2
 g(n) = 7n²
 
 v4
-c1 -> k = 0 . 1
-c2 -> k < q . n + 1
-c3 -> s = 0 . n
-c4 -> i = . n
-c5 -> ini[k] . n
-c6 -> limite = . n
-c7 -> fim[k] . n
-c8 -> i + 1 . n²/2 + n
-c9 -> <= limite . n²/2 + n
-c10 -> s = . n²/2
-c11 -> s + . n²/2
-c12 -> + v[i + 1] . n²/2
-c13 -> v[i] . n²/2
-c14 -> i + 1 . n²/2
-c15 -> v[i + 1] . n²/2
-c16 -> i += 2 . n²/2
-c17 -> i <= limite . n
-c18 -> s = . n
-c19 -> s + . n
-c20 -> v[i] . n
-c21 -> resp[k] . n
-c22 -> = s . n
-c23 -> k += 1 . n
+c1  -> prefixo = . 1
+c2  -> [0] * . 1
+c3  -> n + 1 . 1
+c4  -> i = 0 . 1
+c5  -> i < n . n + 1
+c6  -> i + 1 . n
+c7  -> prefixo[i + 1] . n
+c8  -> = . n
+c9  -> prefixo[i] . n
+c10 -> + . n
+c11 -> v[i] . n
+c12 -> i += 1 . n
+c13 -> somas_ate_fim = . 1
+c14 -> [0] * q . 1
+c15 -> somas_antes_inicio = . 1
+c16 -> [0] * . 1
+c17 -> k = 0 . 1
+c18 -> k < q . n + 1
+c19 -> somas_ate_fim[k] . n
+c20 -> = . n
+c21 -> fim[k] . n
+c22 -> + 1 . n                 
+c23 -> prefixo[fim[k] + 1] . n               
+c24 -> k += 1 . n               
+c25 -> k = 0 . 1               
+c26 -> k < q . n + 1               
+c27 -> somas_antes_inicio[k] . n
+c28 -> ini[k] . n              
+c29 -> prefixo[ini[k]] . n     
+c30 -> k += 1 . n              
+c31 -> k = 0 . 1               
+c32 -> k < q . n + 1               
+c33 -> resp[k] . n             
+c34 -> = . n                   
+c35 -> somas_ate_fim[k] . n    
+c36 -> - . n                   
+c37 -> somas_antes_inicio[k] . n
+c38 -> k += 1 . n              
 
-k(n) = 3n²
-f(n) = 4,5n² + 15n + 2
-g(n) = 5n²
+k(n) = 25n
+f(n) = 27n + 14
+g(n) = 30n
 
 Na v4, o laço interno executa n/2 vezes porque cada iteração processa 
 dois elementos do vetor (v[i] e v[i + 1]), 
