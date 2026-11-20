@@ -1,14 +1,25 @@
 def somas(v, n, ini, fim, q, resp):
+    prefixo = [0] * (n + 1)
+
+    i = 0
+    while i < n:
+        prefixo[i + 1] = prefixo[i] + v[i]
+        i += 1
+
+    somas_ate_fim = [0] * q
+    somas_antes_inicio = [0] * q
+
     k = 0
     while k < q:
-        s = 0
-        i = ini[k]
-        limite = fim[k]
-        while i + 1 <= limite:
-            s = s + v[i] + v[i + 1]
-            i += 2
-        if i <= limite:
-            s = s + v[i]
+        somas_ate_fim[k] = prefixo[fim[k] + 1]
+        k += 1
 
-        resp[k] = s
+    k = 0
+    while k < q:
+        somas_antes_inicio[k] = prefixo[ini[k]]
+        k += 1
+
+    k = 0
+    while k < q:
+        resp[k] = somas_ate_fim[k] - somas_antes_inicio[k]
         k += 1

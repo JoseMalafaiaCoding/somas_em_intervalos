@@ -118,49 +118,41 @@ enquanto o índice avança duas posições (i += 2).
 Assim, para percorrer os n elementos, são necessárias apenas n/2 iterações
 
 v5
-c1  -> k = 0 . 1
-c2  -> k < q . n + 1
-c3  -> s = 0 . n
-c4  -> i = . n
-c5  -> ini[k] . n
-c6  -> limite = . n
-c7  -> fim[k] . n
-c8  -> i + 3 . n²/4 + n
-c9  -> <= limite . n²/4 + n
-c10 -> s = . n²/4
-c11 -> s + . n²/4
-c12 -> v[i] . n²/4
-c13 -> + v[i + 1] . n²/4
-c14 -> i + 1 . n²/4
-c15 -> v[i + 1] . n²/4
-c16 -> + v[i + 2] . n²/4
-c17 -> i + 2 . n²/4
-c18 -> v[i + 2] . n²/4
-c19 -> + v[i + 3] . n²/4
-c20 -> i + 3 . n²/4
-c21 -> v[i + 3] . n²/4
-c22 -> i += 4 . n²/4
-c23 -> i <= limite . n²/4 + n
-c24 -> s = . n² mod 4
-c25 -> s + . n² mod 4
-c26 -> v[i] . n² mod 4
-c27 -> i += 1 . n² mod 4
-c28 -> resp[k] . n
-c29 -> = s . n
-c30 -> k += 1 . n
+c1  -> prefixo = . 1
+c2  -> [0] * . 1
+c3  -> n + 1 . 1
+c4  -> i = 0 . 1
+c5  -> i < n . n + 1
+c6  -> i + 1 . n
+c7  -> prefixo[i + 1] . n
+c8  -> = . n
+c9  -> prefixo[i] . n
+c10 -> + . n
+c11 -> v[i] . n
+c12 -> i += 1 . n
+c13 -> somas_ate_fim = . 1
+c14 -> [0] * q . 1
+c15 -> k = 0 . 1
+c16 -> k < q . n + 1
+c17 -> somas_ate_fim[k] . n
+c18 -> = . n
+c19 -> fim[k] . n
+c20 -> + 1 . n
+c21 -> prefixo[fim[k] + 1] . n
+c22 -> k += 1 . n
+c23 -> k = 0 . 1
+c24 -> k < q . n + 1
+c25 -> resp[k] . n
+c26 -> = . n
+c27 -> somas_ate_fim[k] . n
+c28 -> - . n
+c29 -> ini[k] . n
+c30 -> prefixo[ini[k]] . n
+c31 -> k += 1 . n
 
-k(n) = 3n²
-f(n) = 3,75n² + 12n + 2
-g(n) = 5n²
-
-Na v5, o primeiro while processa quatro elementos por iteração, 
-executando n/4 vezes por consulta. 
-Como temos q = n, o total é n²/4 execuções, quando n é divisível por 4.
-
-O segundo while processa os elementos restantes, 
-executando n mod 4 vezes por consulta. 
-Quando n é múltiplo de 4, seu corpo não é executado, 
-mas a condição ainda é testada.
+k(n) = 20n
+f(n) = 23n + 11
+g(n) = 25n
 
 v6
 c1  -> prefixo = . 1
