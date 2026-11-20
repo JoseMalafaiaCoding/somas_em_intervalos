@@ -65,8 +65,8 @@ Os tempos apresentados correspondem à **mediana de cinco execuções** por vers
 | v1 | 10.433 | 7,708809 | 12,25% menos tempo |
 | v2 | 10.433 | 6,172683 | 29,74% menos tempo |
 | v3 | 10.433 | 5,909541 | 32,73% menos tempo |
-| v4 (linear) | 10.000.000 | 2,265766 | Não comparável diretamente: entrada diferente |
-| v5 (linear) | 10.000.000 | 1,971931 | Não comparável diretamente: entrada diferente |
+| v4 | 10.000.000 | 2,265766 | Não comparável diretamente: entrada diferente |
+| v5 | 10.000.000 | 1,971931 | Não comparável diretamente: entrada diferente |
 | v6 | 10.000.000 | 1,557391 | Não comparável diretamente: entrada diferente |
 
 Nos testes com `n = q = 10.433`, as versões v0, v1, v2 e v3 produziram a mesma soma registrada: **15.301**. No cenário 8, com `n = q = 10.000.000`, as versões lineares v4, v5 e v6 também coincidiram, retornando **-269.416**.
